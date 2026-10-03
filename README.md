@@ -31,7 +31,7 @@ I build business software end to end: data model, API, interface and security.
 | **[ARIA — PropTech thesis](https://github.com/Leocort47/ProyectodeGradoPropIA)** | Unifies listings from Finca Raíz, La Haus and Metrocuadrado and answers natural-language property searches. | FastAPI · PostgreSQL · Selenium · React · TypeScript |
 | **[Coronado Barbershop](https://leocort47.github.io/coronado-barber-shop/)** · *freelance* | Booking site for a local barbershop: guided booking, appointment chatbot, shop with cart — every flow ends in a ready-to-send WhatsApp message. | HTML · CSS · JavaScript · GitHub Pages |
 | **[Purchase forecasting](https://www.leandro-cortes.com/projects/prediccion-compras)** · *case study* | Machine-learning demand forecast to support purchasing and replenishment decisions. | Laravel · MySQL · ML |
-| **[Churn prediction](https://github.com/Leocort47/An-lisis-Predictivo-de-Churn)** | Customer churn model comparing Naïve Bayes, decision trees and random forests, served with Streamlit. | Python · scikit-learn · pandas · Streamlit |
+| **[Churn prediction](https://github.com/Leocort47/An-lisis-Predictivo-de-Churn)** | Customer churn classifier: data cleaning, correlation-based feature selection, Naïve Bayes training plus saved decision tree and random forest models. | Python · scikit-learn · pandas · Seaborn |
 
 ### 🛠️ Tech stack
 
