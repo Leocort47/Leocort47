@@ -58,7 +58,7 @@ const glyphs = new Map();
 function glyphId(g) {
   let entry = glyphs.get(g);
   if (!entry) {
-    entry = { id: `g${glyphs.size.toString(36)}`, d: g.getPath(0, 0, GLYPH_SIZE).toPathData(1) };
+    entry = { id: `_${glyphs.size.toString(36)}`, d: g.getPath(0, 0, GLYPH_SIZE).toPathData(1) };
     glyphs.set(g, entry);
   }
   return entry;
