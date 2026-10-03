@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Profile preview</title>
+<style>
+  body { margin: 0; padding: 32px; background: #0d1117; display: grid; gap: 16px; max-width: 900px; }
+  @media (prefers-color-scheme: light) { body { background: #ffffff; } }
+  img { width: 100%; display: block; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .btns { display: flex; gap: 10px; justify-content: center; }
+  .btns img { width: auto; height: 44px; }
+</style>
+<body>
+<script>
+  const s = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  const img = (n) => `<img src="assets/generated/${n}-${s}.svg">`;
+  document.body.innerHTML = [
+    img('hero'),
+    `<div class="btns">${img('btn-portfolio')}${img('btn-linkedin')}${img('btn-email')}</div>`,
+    `<div class="row">${img('now')}${img('availability')}</div>`,
+    `<div class="row">${img('project-cartera')}${img('project-portfolio')}</div>`,
+    `<div class="row">${img('project-aria')}${img('project-coronado')}</div>`,
+    img('stack'),
+    `<div class="row">${img('stats')}${img('languages')}</div>`,
+    img('activity'),
+  ].join('');
+</script>
+</body>

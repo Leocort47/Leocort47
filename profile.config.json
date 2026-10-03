@@ -1,0 +1,133 @@
+{
+  "login": "Leocort47",
+  "name": "Leandro Cortés",
+  "location": "Bucaramanga, CO",
+  "since": 2022,
+  "links": {
+    "portfolio": "https://www.leandro-cortes.com",
+    "linkedin": "https://www.linkedin.com/in/leandro-cort%C3%A9s-6a0311191/",
+    "email": "mailto:leandrocort47@gmail.com"
+  },
+  "hero": {
+    "eyebrow": "Full Stack Developer · Bucaramanga, Colombia",
+    "rotating": [
+      "Vue 3 · Laravel · Node.js · Python",
+      "Business software, from data model to production",
+      "Clean architecture. Real users. Shipped."
+    ],
+    "status": "Open to Junior / Mid Full Stack & Vue roles",
+    "code": {
+      "role": "Full Stack Developer",
+      "focus": "Vue 3",
+      "stack": ["Laravel", "Node", "SQL"],
+      "graduates": "Dec 2026",
+      "english": "B2"
+    }
+  },
+  "now": {
+    "title": "Now",
+    "items": [
+      { "title": "Full Stack Developer · 2026", "detail": "Built a receivables platform in production — Vue 3 · Laravel" },
+      { "title": "Freelance developer", "detail": "Websites and web apps for small businesses" },
+      { "title": "Systems Engineering · UNAB", "detail": "Graduating December 2026" },
+      { "title": "Languages", "detail": "Spanish (native) · English B2" }
+    ]
+  },
+  "availability": {
+    "title": "Open to work",
+    "headline": "Junior / Mid Full Stack",
+    "subline": "Vue 3 · Laravel · Node.js · SQL",
+    "chips": ["Remote", "Hybrid", "UTC−5"],
+    "cta": "leandro-cortes.com"
+  },
+  "projects": [
+    {
+      "slug": "cartera",
+      "number": "01",
+      "category": "Enterprise · Fintech",
+      "badge": "Case study",
+      "title": "Receivables Platform",
+      "summary": "Multi-company, multi-branch collections system with SAP Business One integration, online payments and role-based access. In production.",
+      "stack": ["Vue 3", "Laravel 11", "MySQL", "SAP B1"],
+      "href": "https://www.leandro-cortes.com/projects/cartera-dpjd"
+    },
+    {
+      "slug": "portfolio",
+      "number": "02",
+      "category": "Product · Frontend",
+      "badge": "Live",
+      "title": "leandro-cortes.com",
+      "summary": "Prerendered Vue SPA in three languages with an offline assistant, strict CSP and CI for lint, types, tests and build.",
+      "stack": ["Vue 3", "Vite SSG", "Pinia", "TypeScript"],
+      "href": "https://www.leandro-cortes.com"
+    },
+    {
+      "slug": "aria",
+      "number": "03",
+      "category": "PropTech · Thesis",
+      "badge": "Code",
+      "title": "ARIA",
+      "summary": "Unifies listings from three Colombian real estate portals and answers property searches written in natural language.",
+      "stack": ["FastAPI", "PostgreSQL", "Selenium", "React"],
+      "href": "https://github.com/Leocort47/ProyectodeGradoPropIA"
+    },
+    {
+      "slug": "coronado",
+      "number": "04",
+      "category": "Freelance · Web",
+      "badge": "Live",
+      "title": "Coronado Barbershop",
+      "summary": "Booking site for a local barbershop: guided booking, chatbot and shop — every flow ends in a ready-to-send WhatsApp message.",
+      "stack": ["JavaScript", "CSS", "GitHub Pages"],
+      "href": "https://leocort47.github.io/coronado-barber-shop/"
+    }
+  ],
+  "stack": [
+    {
+      "group": "Frontend",
+      "items": [
+        { "name": "Vue 3", "icon": "Vuedotjs" },
+        { "name": "TypeScript", "icon": "Typescript" },
+        { "name": "Pinia", "mono": "Pi", "color": "#ffd859" },
+        { "name": "Vite", "icon": "Vite" },
+        { "name": "React", "icon": "React" }
+      ]
+    },
+    {
+      "group": "Backend",
+      "items": [
+        { "name": "Laravel", "icon": "Laravel" },
+        { "name": "PHP 8.3", "icon": "Php" },
+        { "name": "Node.js", "icon": "Nodedotjs" },
+        { "name": "FastAPI", "icon": "Fastapi" },
+        { "name": "Python", "icon": "Python" }
+      ]
+    },
+    {
+      "group": "Data",
+      "items": [
+        { "name": "MySQL", "icon": "Mysql" },
+        { "name": "SQL Server", "mono": "SQL", "color": "#cc2927" },
+        { "name": "PostgreSQL", "icon": "Postgresql" },
+        { "name": "SAP Business One", "icon": "Sap" },
+        { "name": "scikit-learn", "icon": "Scikitlearn" }
+      ]
+    },
+    {
+      "group": "Quality & DevOps",
+      "items": [
+        { "name": "Git", "icon": "Git" },
+        { "name": "GitHub Actions", "icon": "Githubactions" },
+        { "name": "Vitest", "icon": "Vitest" },
+        { "name": "Docker", "icon": "Docker" },
+        { "name": "Vercel", "icon": "Vercel" }
+      ]
+    }
+  ],
+  "metrics": {
+    "excludeRepos": ["Leocort47"],
+    "excludeLanguages": ["Jupyter Notebook", "HTML", "CSS", "SCSS", "ShaderLab", "HLSL", "PowerShell", "Blade", "PLpgSQL"],
+    "topLanguages": 6,
+    "activeMonths": 24
+  }
+}
