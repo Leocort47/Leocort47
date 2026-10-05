@@ -23,7 +23,7 @@
 
 <p>
   <a href="https://github.com/Leocort47/ProyectodeGradoPropIA"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/project-aria-dark.svg"><img alt="03 ARIA — PropTech thesis, open source. Unifies listings from three Colombian real estate portals and answers natural-language property searches. FastAPI, PostgreSQL, Selenium, React." src="./assets/generated/project-aria-light.svg" width="49%"></picture></a>
-  <a href="https://leocort47.github.io/coronado-barber-shop/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/project-coronado-dark.svg"><img alt="04 Coronado Barbershop — freelance, live. Booking site with guided booking, chatbot and shop, every flow ending in a WhatsApp message. JavaScript, CSS, GitHub Pages." src="./assets/generated/project-coronado-light.svg" width="49%"></picture></a>
+  <a href="https://coronado-barbershop.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/generated/project-coronado-dark.svg"><img alt="04 Coronado Barbershop — freelance, live. Booking site with guided booking, chatbot and shop, every flow ending in a WhatsApp message. JavaScript, CSS, GitHub Pages." src="./assets/generated/project-coronado-light.svg" width="49%"></picture></a>
 </p>
 
 <picture>
