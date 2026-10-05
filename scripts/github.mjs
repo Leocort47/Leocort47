@@ -79,13 +79,29 @@ export async function loadGitHubData({ login, token, fullScope, cachePath, metri
     console.warn(`GitHub API unavailable (${err.message}): using cached data.`);
     return cache || emptyData();
   }
-  const data =
-    fullScope || !cache
-      ? fresh
-      : { ...fresh, repositories: cache.repositories, stars: Math.max(cache.stars, fresh.stars), languages: cache.languages };
+  const data = fullScope || !cache ? fresh : mergeWithCache(fresh, cache);
   mkdirSync(dirname(cachePath), { recursive: true });
   writeFileSync(cachePath, `${JSON.stringify(data, null, 2)}\n`);
   return data;
+}
+
+/**
+ * A public-only token cannot see private contributions, so each day keeps the
+ * higher of the cached and fresh counts instead of dropping private work.
+ */
+function mergeWithCache(fresh, cache) {
+  const cached = new Map(cache.weeks.flat().map((d) => [d.date, d.count]));
+  const weeks = fresh.weeks.map((w) => w.map((d) => ({ date: d.date, count: Math.max(d.count, cached.get(d.date) || 0) })));
+  const contributions = weeks.flat().reduce((acc, d) => acc + d.count, 0);
+  return {
+    ...fresh,
+    weeks,
+    contributions: Math.max(contributions, fresh.contributions),
+    commits: Math.max(cache.commits, fresh.commits),
+    repositories: cache.repositories,
+    stars: Math.max(cache.stars, fresh.stars),
+    languages: cache.languages,
+  };
 }
 
 function emptyData() {
